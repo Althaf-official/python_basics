@@ -14,6 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
     #first comment
+    #third commit
+
 
 #this is sample commit
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
