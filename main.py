@@ -1,4 +1,6 @@
-a=30
-b=20
+a=input("enter  two number")
+b=input()
 
-print("value of a is  "+str(a))
+print("entered first number  is  "+str(a) +"and second number is "+str(b))
+
+
