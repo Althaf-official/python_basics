@@ -1,4 +1,2 @@
-a="this_is_mascreation"
-
-print(len(a))
-print(a[4:17])
+if 5 > 2:
+  print("Five is greater than two!")
