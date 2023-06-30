@@ -1,5 +1,6 @@
-name="muhammed althaf"
+if 5 > 2:
+    print("Five is greater than two!")
 
-print(name)
-print(len(name))
-print(name[5:13])
+
+#if 5 > 2:
+#print("Five is greater than two!")
