@@ -3,4 +3,6 @@ car =	{
   "model": "Mustang",
   "year": 1964
 }
-print(car.get("model"))
+car["year"]=2020
+
+print(car.get("year"))
