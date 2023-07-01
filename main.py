@@ -1,6 +1,8 @@
-if 5 > 2:
-    print("Five is greater than two!")
+x, y, z,mas  = "Orange", "Banana", "Cherry","jam"
 
+print(x)
+print(y)
+print(z)
+print(mas)
 
-#if 5 > 2:
-#print("Five is greater than two!")
+#Make sure the number of variables matches the number of values, or else you will get an error.
