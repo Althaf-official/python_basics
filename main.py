@@ -3,11 +3,6 @@ car =	{
   "model": "Mustang",
   "year": 1964
 }
-car["color"]="red"
 
-print(car.get("color"))
-print(car.get("model"))
-
-print("after pop")
-car.pop("model")
+car.clear()
 print(car.get("model"))
