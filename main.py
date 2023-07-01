@@ -1,2 +1,2 @@
-fruits = ["apple", "banana", "cherry"]
-print(len(fruits))
+fruits = ("apple", "banana", "cherry")
+print(fruits[0])
