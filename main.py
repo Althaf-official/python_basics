@@ -1,9 +1,5 @@
-x = "awesome"
+#The following code example would print the data type of x, what data type would that be?
 
-def myfunc():
-  global x
-  x = "fantastic"
 
-myfunc()
-
-print("Python is " + x)
+x = ["apple", "banana", "cherry"]
+print(type(x))
