@@ -1,1 +1,4 @@
-print("Yes") if 5 > 2 else print("No")
+i = 1
+while i < 6:
+    print(i)
+    i += 1
