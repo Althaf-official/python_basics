@@ -1,1 +1,1 @@
-print(bool("abc"))
+print(bool(0))
