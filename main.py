@@ -1,8 +1,7 @@
-fruits = ["apple", "banana", "cherry","coca"]
-x, y, z ,g= fruits
-
-
+x = "Python is awesome"
 print(x)
-print(y)
-print(z)
-print(g)
+
+c = "Python"
+y = "is"
+z = "awesome"
+print(c, y, z)
