@@ -1,7 +1,12 @@
 x = "Python is awesome"
 print(x)
 
-c = "Python"
+r = "Python"
 y = "is"
 z = "awesome"
-print(c, y, z)
+print(r, y, z)
+
+a = "Python "
+b = "is "
+c = "awesome"
+print(a + b + c)
