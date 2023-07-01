@@ -1,2 +1,2 @@
-x = {"name" : "John", "age" : 36}
+x = True
 print(type(x))
