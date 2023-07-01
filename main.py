@@ -1,3 +1,4 @@
 txt = "Hello World"
-txt = txt.lower()
+txt = txt.replace("H", "J")
+
 print(txt)
