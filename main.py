@@ -1,3 +1,1 @@
 print(bool("abc"))
-
-True
