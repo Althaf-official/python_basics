@@ -1,4 +1,4 @@
 fruits = {"apple", "banana", "cherry"}
-fruits.remove("banana")
+fruits.discard("banana")
 
 print(fruits)
