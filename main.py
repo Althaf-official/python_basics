@@ -1,4 +1,6 @@
-fruits = {"apple", "banana", "cherry"}
-fruits.discard("banana")
-
-print(fruits)
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model"))
