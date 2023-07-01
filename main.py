@@ -1,4 +1,5 @@
 fruits = {"apple", "banana", "cherry"}
-fruits.add("orange")
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
 
 print(fruits)
