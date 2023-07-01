@@ -3,6 +3,6 @@ car =	{
   "model": "Mustang",
   "year": 1964
 }
-car["year"]=2020
+car["color"]="red"
 
-print(car.get("year"))
+print(car.get("color"))
