@@ -1,6 +1,8 @@
 a = 50
 b = 10
 if a == b:
-  print("Yes")
+  print("1")
+elif a>b :
+    print("2")
 else:
-    print("No")
+    print("3")
