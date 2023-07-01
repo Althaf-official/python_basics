@@ -1,5 +1,4 @@
-
 fruits = ["apple", "banana", "cherry"]
-fruits.append("orange")
+fruits.insert(1,"lemon")
 
 print(fruits)
