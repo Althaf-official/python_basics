@@ -1,2 +1,2 @@
 fruits = ("apple", "banana", "cherry")
-print(len(fruits))
+print(fruits[-1])
