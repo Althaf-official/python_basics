@@ -1,5 +1,6 @@
-def my_function():
-    print("hello from my function")
+class MyClass:
+  x = 5
 
+p1 = MyClass()
 
-my_function()
+print(p1.x)
