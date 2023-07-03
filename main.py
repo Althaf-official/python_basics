@@ -1,2 +1,2 @@
-
-from mymodle import person1
+name = input("What is your name? ")  # Prompt the user for their name
+print("Hello, " + name + "!")  # Greet the user
