@@ -1,95 +1,78 @@
-class BankAccount:
-    def __init__(self, account_number, balance=0):
-        self.account_number = account_number
-        self.balance = balance
+import random
 
-    def deposit(self, amount):
-        self.balance += amount
-        print(f"Deposited {amount} units.")
-        self.print_balance()
+class Stock:
+    def __init__(self, symbol, price):
+        self.symbol = symbol
+        self.price = price
 
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-            print(f"Withdrew {amount} units.")
+class Portfolio:
+    def __init__(self):
+        self.stocks = []
+
+    def add_stock(self, stock):
+        self.stocks.append(stock)
+
+    def remove_stock(self, symbol):
+        for stock in self.stocks:
+            if stock.symbol == symbol:
+                self.stocks.remove(stock)
+                break
+
+    def get_stock_price(self, symbol):
+        for stock in self.stocks:
+            if stock.symbol == symbol:
+                return stock.price
+        return None
+
+class StockTradingAlgorithm:
+    def __init__(self):
+        self.portfolio = Portfolio()
+
+    def initialize_portfolio(self):
+        # Add initial stocks to the portfolio
+        self.portfolio.add_stock(Stock("AAPL", 150.0))
+        self.portfolio.add_stock(Stock("GOOG", 2500.0))
+        self.portfolio.add_stock(Stock("TSLA", 650.0))
+        self.portfolio.add_stock(Stock("AMZN", 3500.0))
+        self.portfolio.add_stock(Stock("MAS",10.00))
+
+    def buy_stock(self, symbol, quantity):
+        price = self.portfolio.get_stock_price(symbol)
+        if price is not None:
+            total_cost = price * quantity
+            # Perform buying logic
+            print(f"Bought {quantity} shares of {symbol} at ${price:.2f} each. Total cost: ${total_cost:.2f}")
         else:
-            print("Insufficient funds.")
-        self.print_balance()
+            print(f"Failed to buy {symbol}. Stock not found in portfolio.")
 
-    def print_balance(self):
-        print(f"Account Balance: {self.balance} units.")
-
-    def transfer(self, amount, recipient):
-        if amount <= self.balance:
-            self.balance -= amount
-            recipient.balance += amount
-            print(f"Transferred {amount} units to account number {recipient.account_number}.")
+    def sell_stock(self, symbol, quantity):
+        price = self.portfolio.get_stock_price(symbol)
+        if price is not None:
+            total_sale = price * quantity
+            # Perform selling logic
+            print(f"Sold {quantity} shares of {symbol} at ${price:.2f} each. Total sale: ${total_sale:.2f}")
         else:
-            print("Insufficient funds.")
-        self.print_balance()
+            print(f"Failed to sell {symbol}. Stock not found in portfolio.")
 
+    def run_algorithm(self):
+        self.initialize_portfolio()
 
-def main():
-    accounts = {}
+        # Simulate trading for 10 iterations
+        for i in range(10):
+            # Generate random stock symbol
+            symbol = random.choice(["AAPL", "GOOG", "TSLA", "AMZN","MAS"])
 
-    while True:
-        print("\n===== BANKING SYSTEM =====")
-        print("1. Create Account")
-        print("2. Deposit")
-        print("3. Withdraw")
-        print("4. Check Balance")
-        print("5. Transfer")
-        print("6. Quit")
+            # Generate random quantity
+            quantity = random.randint(100, 2000)
 
-        choice = input("Enter your choice (1-6): ")
+            # Generate random action (buy or sell)
+            action = random.choice(["buy", "sell"])
 
-        if choice == "1":
-            account_number = input("Enter account number: ")
-            if account_number in accounts:
-                print("Account already exists.")
+            if action == "buy":
+                self.buy_stock(symbol, quantity)
             else:
-                accounts[account_number] = BankAccount(account_number)
-                print("Account created successfully.")
-
-        elif choice == "2":
-            account_number = input("Enter account number: ")
-            if account_number in accounts:
-                amount = float(input("Enter the amount to deposit: "))
-                accounts[account_number].deposit(amount)
-            else:
-                print("Account not found.")
-
-        elif choice == "3":
-            account_number = input("Enter account number: ")
-            if account_number in accounts:
-                amount = float(input("Enter the amount to withdraw: "))
-                accounts[account_number].withdraw(amount)
-            else:
-                print("Account not found.")
-
-        elif choice == "4":
-            account_number = input("Enter account number: ")
-            if account_number in accounts:
-                accounts[account_number].print_balance()
-            else:
-                print("Account not found.")
-
-        elif choice == "5":
-            account_number = input("Enter account number: ")
-            recipient_number = input("Enter recipient account number: ")
-            if account_number in accounts and recipient_number in accounts:
-                amount = float(input("Enter the amount to transfer: "))
-                accounts[account_number].transfer(amount, accounts[recipient_number])
-            else:
-                print("Account not found.")
-
-        elif choice == "6":
-            print("Thank you for using our banking system. Goodbye!")
-            break
-
-        else:
-            print("Invalid choice. Please enter a number between 1 and 6.")
-
+                self.sell_stock(symbol, quantity)
 
 if __name__ == "__main__":
-    main()
+    trading_algorithm = StockTradingAlgorithm()
+    trading_algorithm.run_algorithm()
