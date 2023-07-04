@@ -3,6 +3,6 @@ values=["althaf","muhammed","jhon","shown"]
 values=values+["hakim",1000]
 
 
-values.append("mas creation")
+values.append(input("enter a value"))
 
 print(values)
