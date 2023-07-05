@@ -1,9 +1,7 @@
-choice=int(input("Enter Your Choice 1 for chappthi 2 for poori"))
+def star_pattern_pyramid(rows):
+    for i in range(rows):
+        print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
 
-
-if choice==1:
-    print("you are selected chappathi")
-elif choice==2:
-    print("you are selected poori")
-else:
-    print("you are a fooool")
+# Example usage
+num_rows = 10
+star_pattern_pyramid(num_rows)
