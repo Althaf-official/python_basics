@@ -1,6 +1,7 @@
-movies=["jhon.mp4","clash.mp4","dhoom.mp4"]
+num = int(input("Enter a number: "))
 
-print(movies)
+print(f"Multiplication table for {num}:")
 
-for x in movies:
-    print(x[0:-4])
+for i in range(1, 11):
+    product = num * i
+    print(f"{num} x {i} = {product}")
