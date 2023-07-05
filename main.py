@@ -1,7 +1,24 @@
-def star_pattern_pyramid(rows):
-    for i in range(rows):
-        print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
+def print_star_pyramid(rows):
+    # Initialize variables
+    i = 0
+    while i < rows:
+        # Print spaces
+        j = 0
+        while j < rows - i - 1:
+            print(" ", end="")
+            j += 1
 
-# Example usage
-num_rows = 10
-star_pattern_pyramid(num_rows)
+        # Print stars
+        j = 0
+        while j <= i:
+            print("* ", end="")
+            j += 1
+
+        # Move to the next line
+        print()
+        i += 1
+
+
+# Test the function
+rows = int(input("Enter the number of rows: "))
+print_star_pyramid(rows)
