@@ -1,8 +1,6 @@
-names=["Muhammed", "Althaf","Sharafudheen","Jaseela"]
-print(names)
-names.append("ashraf")
-names.pop(1)#remove first position Althaf
-names.remove("Muhammed")
+movies=["jhon.mp4","clash.mp4","dhoom.mp4"]
 
-for x in names:
-    print(x)
+print(movies)
+
+for x in movies:
+    print(x[0:-4])
