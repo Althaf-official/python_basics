@@ -1,8 +1,6 @@
-values=["althaf","muhammed","jhon","shown"]
+num=int(input("Enter a number"))
 
-values=values+["hakim",1000]
-
-
-values.append(input("enter a value"))
-
-print(values)
+if num<0:
+    print("Enterd Number is negative")
+else:
+    print("Entered Number is Positive")
