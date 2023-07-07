@@ -1,6 +1,6 @@
-def hey(name,age):
-    print("My name is "+name + "and my age was  :"+str(age) )
+def fun(*values):
+    print("first name is "+values[0]+"Second name is :"+values[1])
 
 
-value="Mas Solutions"
-hey(value,27)
+
+fun("Muhammed althaf","Althaf","Sharafudheen")
