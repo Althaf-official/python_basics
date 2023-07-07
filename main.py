@@ -1,6 +1,6 @@
-def my_function(x):
-  return 5 * x
+def my_function(fname):
+  print(fname + " Refsnes")
 
-print(my_function(3))
-print(my_function(5))
-print(my_function(9))
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
