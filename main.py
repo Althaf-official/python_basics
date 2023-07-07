@@ -2,6 +2,9 @@
 value=10
 
 def mas():
-    print(value)
+    # local variable
+    s=value+10
+    print(s)
 
 mas()
+print(value)
