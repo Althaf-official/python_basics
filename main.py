@@ -1,5 +1,4 @@
-def sample(firstname, secondname, age):
-    print("my age is  :" + str(age), firstname, secondname)
+def sample(name,age=30):
+    print(name,age)
 
-
-sample(firstname="muhammed", secondname="althaf", age=27)
+sample("muhammed",27)
