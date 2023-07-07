@@ -1,6 +1,7 @@
-def fun(*values):
-    print("first name is "+values[0]+"Second name is :"+values[1])
+# global variable
+value=10
 
+def mas():
+    print(value)
 
-
-fun("Muhammed althaf","Althaf","Sharafudheen")
+mas()
