@@ -1,3 +1,5 @@
-x = 5
-y = "John"
-print(x, y)
+def hey(name):
+    print("My name is "+name)
+
+
+hey("Muhammed Althaf")
