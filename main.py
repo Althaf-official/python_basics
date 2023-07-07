@@ -1,6 +1,6 @@
-def hey(name):
-    print("My name is "+name)
+def hey(name,age):
+    print("My name is "+name + "and my age was  :"+str(age) )
 
 
 value="Mas Solutions"
-hey(value)
+hey(value,27)
