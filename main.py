@@ -1,10 +1,4 @@
-# global variable
-value=10
+def sample(firstName,secondName,age):
+    print("my age is  :"+str(age),firstName,secondName)
 
-def mas():
-    # local variable
-    s=value+10
-    print(s)
-
-mas()
-print(value)
+sample("muhammed","althaf",27)
