@@ -1,10 +1,8 @@
-def tri_recursion(k):
-  if(k > 0):
-    result = k + tri_recursion(k - 1)
-    print(result)
-  else:
-     result = 0
-  return result
+def square(number):
+    """Function to calculate the square of a number."""
+    return number ** 2
 
-print("\n\nRecursion Example Results")
-tri_recursion(6)
+
+# Testing the function
+result = square(5)
+print(result)  # Output: 25
