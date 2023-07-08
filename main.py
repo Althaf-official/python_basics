@@ -6,3 +6,5 @@ thisdict = {
 }
 
 print(thisdict)
+
+print(type(thisdict))
