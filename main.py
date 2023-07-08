@@ -6,3 +6,5 @@ thisdict = {
    "year":2213
 }
 print(thisdict)
+
+print(len(thisdict))
