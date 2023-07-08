@@ -1,8 +1,9 @@
-def square(number):
-    """Function to calculate the square of a number."""
-    return number ** 2
+def calculate_sum():
+    num1 = 5
+    num2 = 10
+    sum = num1 + num2
+    return sum
 
 
-# Testing the function
-result = square(5)
-print(result)  # Output: 25
+result = calculate_sum()
+print(result)  # Output: 15
