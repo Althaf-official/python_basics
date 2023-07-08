@@ -1,9 +1,8 @@
-def calculate_sum():
-    num1 = 5
-    num2 = 10
-    sum = num1 + num2
-    return sum
+def my_function():
+    # Function body
+    # Perform some operations or actions here
+    print("Hello, World!")
+    # You can have more statements in your function
 
-
-result = calculate_sum()
-print(result)  # Output: 15
+# Calling the function
+my_function()
