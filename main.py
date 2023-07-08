@@ -1,8 +1,5 @@
-def my_function():
-    # Function body
-    # Perform some operations or actions here
-    print("Hello, World!")
-    # You can have more statements in your function
+def greet(name):
+    print("Hello, " + name + "!")
 
-# Calling the function
-my_function()
+# Call the function
+greet("Alice")
