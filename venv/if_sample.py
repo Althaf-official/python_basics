@@ -1,4 +1,4 @@
-print(__name__)
+#print(__name__)
 print("this is first sample test")
 def negOrpos(num):
     if num<0:
@@ -9,5 +9,5 @@ def negOrpos(num):
         print("Number is zero")
 
 
-print("this is sample text ")
+#print("this is sample text ")
 
