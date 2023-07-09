@@ -1,4 +1,4 @@
-
+print(__name__)
 print("this is first sample test")
 def negOrpos(num):
     if num<0:
