@@ -3,3 +3,6 @@ import if_sample  #when you import something from all funcitons of outside class
 
 print(__name__)
 print(if_sample.__name__)
+
+checkNum=if_sample.negOrpos
+checkNum(100)
