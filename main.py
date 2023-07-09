@@ -1,8 +1,3 @@
-import if_sample  #when you import something from all funcitons of outside class will work
-#if_sample.negOrpos(0)
+from if_sample import negOrpos
 
-print(__name__)
-print(if_sample.__name__)
-
-checkNum=if_sample.negOrpos
-checkNum(100)
+negOrpos(-100)
