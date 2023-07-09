@@ -1,3 +1,12 @@
-from if_sample import negOrpos as check
+import platform
 
-check(10)
+print(platform.system())
+print(platform.machine())
+print(platform.platform())
+print(platform.release())
+print(platform.version())
+print(platform.architecture())
+#print(platform.dist())
+#print(platform.freedesktop_os_release())
+print(platform.java_ver())
+print(platform.node())
