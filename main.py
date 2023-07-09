@@ -1,8 +1,3 @@
-car = {
-"brand": "Ford",
-"model": "Mustang",
-"year": 1964
-}
-x = car.items()
+import if_sample
 
-print(x)
+if_sample.negOrpos(0)
