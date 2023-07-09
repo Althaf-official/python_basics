@@ -1,3 +1,3 @@
-from if_sample import negOrpos
+from if_sample import negOrpos as check
 
-negOrpos(-100)
+check(10)
