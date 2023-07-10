@@ -1,10 +1,14 @@
 #created a class
 class My_Sample_Class():
-    def sample_function(self,name):
+    def sample_function(self,name,age):
         self.NAME=name
+        self.AGE=age
 
     def print_name(self):
-        print(self.NAME)
+        #print(self.NAME)
+        #print(self.AGE)
+        print(f"my name is {self.NAME} and  age is {self.AGE}")
+
 
 """
 Self in Class
@@ -20,13 +24,13 @@ x=My_Sample_Class()
 y=My_Sample_Class()
 
 
-my_wifes_name="jaseela asharaf is my wifes name"
-my_name="Muhammed althaf is my name"
+my_wifes_name="jaseela asharaf"
+my_name="Muhammed althaf"
 
 
 # call the function and passing aurument
-x.sample_function(my_name)
-y.sample_function(my_wifes_name)
+x.sample_function(my_name,27)
+y.sample_function(my_wifes_name,21)
 
 #same function separate memory space
 x.print_name()
