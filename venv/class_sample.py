@@ -29,8 +29,8 @@ my_name="Muhammed althaf"
 
 
 # call the function and passing aurument
-x.sample_function(my_name,27)
-y.sample_function(my_wifes_name,21)
+x.sample_function(my_name,age=27)
+y.sample_function(my_wifes_name,age=21)
 
 #same function separate memory space
 x.print_name()
