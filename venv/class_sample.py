@@ -1,10 +1,17 @@
 #created a class
 class My_Sample_Class():
-    def sample_function(self,n):
-        self.name=n
+    def sample_function(self,name):
+        self.NAME=name
 
     def print_name(self):
-        print(self.name)
+        print(self.NAME)
+
+"""
+Self in Class
+When defining a class in Python, methods (functions defined within the class) typically have self as their first parameter.
+ This parameter is automatically passed by Python when the method is called on an instance of the class. 
+ By convention, self is used as the name for this parameter, although you can technically choose any valid variable name.
+"""
 
 
 
