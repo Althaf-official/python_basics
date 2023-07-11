@@ -13,7 +13,7 @@ class firstClass():
         """
 class secondClass(firstClass):
     def __int__(self):
-        firstClass.__int__(self)
+        super().__int__()
         print("Second class init ")
 
     def display_welcome(self):
