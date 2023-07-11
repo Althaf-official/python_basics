@@ -34,14 +34,14 @@ class secondClass(firstClass):
         print(self.name)
 
     def set_name(self,name):
-        self.name=name
-        print("second class setname")
+        super().set_name(name)
+        print("second class is working setname")
 
 
 
 secondobj=secondClass()
 secondobj.display_welcome()
-secondobj.set_name("althaf")
+secondobj.set_name("althaf muhammed")
 secondobj.display_name()
 
 #overriding
