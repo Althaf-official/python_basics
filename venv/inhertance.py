@@ -4,6 +4,7 @@ class firstClass():
 
     def set_name(self,name):
         self.name=name
+        print("first class setname")
 
         #this is inheritance. second class inherit first class
         """
@@ -19,6 +20,10 @@ class secondClass(firstClass):
 
     def display_name(self):
         print(self.name)
+
+    def set_name(self,name):
+        self.name=name
+        print("second class setname")
 
 
 
