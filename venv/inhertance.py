@@ -11,8 +11,8 @@ class firstClass():
         The child class inherits the attributes and methods of the parent class, and it can also add its own unique attributes and methods.
         """
 class secondClass(firstClass):
-    # def __int__(self):
-    #     print("Second class init ")
+    def __int__(self):
+         print("Second class init ")
 
     def display_welcome(self):
         print("welcome to masgroup")
@@ -28,4 +28,5 @@ secondobj.set_name("althaf")
 secondobj.display_name()
 
 #overriding
+secondobj.__int__()
 secondobj.__int__()
