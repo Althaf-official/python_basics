@@ -11,6 +11,17 @@ class firstClass():
         It allows you to create a new class (known as the child class or subclass) based on an existing class (known as the parent class or superclass). 
         The child class inherits the attributes and methods of the parent class, and it can also add its own unique attributes and methods.
         """
+
+        """"
+super() is a built-in function that allows you to call methods from a parent class 
+(also known as a superclass or base class) in your child class (also known as a subclass or derived class). 
+It provides a way to invoke the methods of the parent class,
+enabling you to reuse and extend the functionality defined in the parent class.
+The super() function is primarily used within the __init__() method of a subclass to invoke the __init__() method of the parent class. 
+By doing so, you can initialize the inherited attributes and perform any necessary setup defined in the parent class 
+before adding or modifying attributes specific to the child class. This process is known as constructor chaining.
+"""
+
 class secondClass(firstClass):
     def __int__(self):
         super().__int__()
