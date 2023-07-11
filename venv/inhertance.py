@@ -13,7 +13,8 @@ class firstClass():
         """
 class secondClass(firstClass):
     def __int__(self):
-         print("Second class init ")
+        firstClass.__int__(self)
+        print("Second class init ")
 
     def display_welcome(self):
         print("welcome to masgroup")
