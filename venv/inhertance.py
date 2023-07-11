@@ -30,3 +30,12 @@ secondobj.display_name()
 #overriding
 secondobj.__int__()
 secondobj.__int__()
+
+"""
+method overriding is a concept where a subclass provides a different implementation of a method that is already defined in its superclass. 
+When a method in the subclass has the same name and parameters as a method in its superclass, 
+the subclass method overrides the superclass method.
+
+Method overriding allows you to customize the behavior of a method inherited from a superclass without modifying the original implementation
+ in the superclass. This is achieved by redefining the method in the subclass with the desired implementation.
+"""
