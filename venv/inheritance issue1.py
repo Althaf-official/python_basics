@@ -8,7 +8,7 @@ class Second:
 
 #third class inherit first and second classes
 #left right rule is here using
-class Third(First,Second):#left-to-right order
+class Third(Second,First):#left-to-right order
     def display_third(self):
         print("this is third class display funciton")
 
