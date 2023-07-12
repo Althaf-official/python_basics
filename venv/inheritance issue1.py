@@ -19,6 +19,11 @@ obj=Third()
 #class first and second same name for function
 obj.display()
 
+"""
+multiple inheritance allows a class to inherit attributes and methods from multiple base classes.
+ When multiple inheritance is used and two or more base classes define a method with the same name, 
+ it can lead to a situation called "Diamond Problem" or "Ambiguity Problem."
+"""
 
 
 
