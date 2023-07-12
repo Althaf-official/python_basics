@@ -20,6 +20,7 @@ class Platypus(Mammal, Bird):
     pass
 
 
+
 perry = Platypus("masss")
 print(perry.name)  # Output: Perry
 print(perry.speak())  # Output: Mammal: Roar!
