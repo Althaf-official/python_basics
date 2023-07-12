@@ -14,5 +14,5 @@ first_name.set_name("althaf")
 second_name.set_name("mas")
 
 
-full_name=first_name+second_name
+full_name=first_name+second_name#this "+" is representing opertor overloading
 print(full_name)
