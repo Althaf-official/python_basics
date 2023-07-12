@@ -8,7 +8,7 @@ class Second:
 
 #third class inherit first and second classes
 #left right rule is here using
-class Third(First,Second):
+class Third(First,Second):#left-to-right order
     def display_third(self):
         print("this is third class display funciton")
 
@@ -26,4 +26,8 @@ multiple inheritance allows a class to inherit attributes and methods from multi
 """
 
 
+print(Third.mro())
 
+"""
+In Python, the MRO is determined by the C3 linearization algorithm. It follows a depth-first, left-to-right order
+"""
