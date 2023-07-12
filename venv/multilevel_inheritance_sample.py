@@ -11,6 +11,11 @@ class Third(Second):
     def display_third(self):
         print("this is third class display funciton")
 
+"""
+ multilevel inheritance refers to a scenario where a class inherits from another derived class, 
+ which in turn inherits from its own base class. This creates a hierarchical structure of inheritance
+"""
+
 
 #create object for Third class
 obj=Third()
