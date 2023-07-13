@@ -1,7 +1,5 @@
 import datetime
 
-obj_day=datetime.datetime.now()
-
 x=datetime.datetime(1995,12,27)
 y=datetime.datetime.now()
 print(y)
